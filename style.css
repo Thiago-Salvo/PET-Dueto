@@ -1,23 +1,47 @@
+body{
+    font-family: sans-serif;
+    background-image: url("./assets/Bg.png");
+
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+section{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    
+}
+
+.linha {
+  display: flex;
+  gap: 3px; 
+  margin-bottom: 5px;
+}
+
 input{
     width: 40px;
     height: 40px;
     font-size: 35px;
     justify-content: center;
     text-align: center;
-    background-color: #615458;
-    border-color: black;
+    background-color: transparent;
+    border: 4px solid #1B3E51;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    /*faz com que a linha branca, que espera você selecionar um texto suma*/
+    caret-color: transparent;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: #6E5C62;
-}
-
-section{
-    width: 270px;
-}
-
-#palavras{
+#grade-letras{
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -25,9 +49,8 @@ section{
     justify-content: center;
 }
 
-#letras{
+#teclado{
     width: 500px;
-    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,24 +58,48 @@ section{
     margin: auto;
     border-radius: 8%;
     border: none;
-    font-weight: 10px;
+    font-weight: bold;
+    gap: 5px; 
+    margin-top: 20px;
 }
 
-button{
+#teclado .letra {
     width: 50px;
-    height: 50px;
+    height: 40px;
     font-size: 25px;
     justify-content: center;
-    background-color: #4C4347;
+    background-color: #1C4760;
     color: white;
-    margin: 2px;
+    border: none;
+    border-radius: 5px;
 }
 
-.btnTexto{
+#teclado .enter{
     width: 99px;
+    height: 40px;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #1C4760;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-h1{
-    text-align: center;
+#teclado .apagar{
+    width: 99px;
+    height: 40px;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #1C4760;
     color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#teclado .apagar img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
