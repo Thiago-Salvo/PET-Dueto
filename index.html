@@ -1,104 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style.css">
-  <title>Termo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>DUETO</title>
+    <script type="text/javascript" src="./scripty.js" defer=""></script>
 </head>
+
 <body>
     <!--Titulo do Termo-->
-    <h1>TERMO</h1>
+    <h1>DUETO</h1>
 
-    <!--Section para montar a grade do jogo e deixar responsivo o site-->
-    <section id="grade-letras">
+    <main>
+      <!--Section para montar a grade do jogo e deixar responsivo o site-->
+      <section id="grade-letras-1" class="grade-jogo">
 
         <!--Div que define a linha 1 de tentativa-->
         <div id="linha1" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna2" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna3" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna4" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna5" class="letra ativa" type="text" maxlength="1">
         </div>
 
         <!--Div que define a linha 2 de tentativa-->
         <div id="linha2" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
         </div>
 
         <!--Div que define a linha 3 de tentativa-->
         <div id="linha3" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
         </div>
 
         <!--Div que define a linha 4 de tentativa-->
         <div id="linha4" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
         </div>
 
         <!--Div que define a linha 5 de tentativa-->
         <div id="linha5" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
         </div>
 
         <!--Div que define a linha 6 de tentativa-->
         <div id="linha6" class="linha">
-            <input id="coluna1" type="text" maxlength=1>
-            <input id="coluna2" type="text" maxlength=1>
-            <input id="coluna3" type="text" maxlength=1>
-            <input id="coluna4" type="text" maxlength=1>
-            <input id="coluna5" type="text" maxlength=1>
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
         </div>
-    </section>
 
+        <!--Div que define a linha 7 de tentativa-->
+        <div id="linha7" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+      </section>
+
+      <section id="grade-letras-2" class="grade-jogo">
+
+        <!--Div que define a linha 1 de tentativa-->
+        <div id="linha1" class="linha">
+          <input id="coluna1" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna2" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna3" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna4" class="letra ativa" type="text" maxlength="1">
+          <input id="coluna5" class="letra ativa" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 2 de tentativa-->
+        <div id="linha2" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 3 de tentativa-->
+        <div id="linha3" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 4 de tentativa-->
+        <div id="linha4" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 5 de tentativa-->
+        <div id="linha5" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 6 de tentativa-->
+        <div id="linha6" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+
+        <!--Div que define a linha 7 de tentativa-->
+        <div id="linha7" class="linha">
+          <input id="coluna1" class="letra espera" type="text" maxlength="1">
+          <input id="coluna2" class="letra espera" type="text" maxlength="1">
+          <input id="coluna3" class="letra espera" type="text" maxlength="1">
+          <input id="coluna4" class="letra espera" type="text" maxlength="1">
+          <input id="coluna5" class="letra espera" type="text" maxlength="1">
+        </div>
+        
+      </section>
+    </main>
     <!--Section para definir o teclado do jogo e manter responsivo-->
     <section id="teclado">
-        <button class="letra">Q</button>
-        <button class="letra">W</button>
-        <button class="letra">E</button>
-        <button class="letra">R</button>
-        <button class="letra">T</button>
-        <button class="letra">Y</button>
-        <button class="letra">U</button>
-        <button class="letra">I</button>
-        <button class="letra">O</button>
-        <button class="letra">P</button>
-        <button class="letra">A</button>
-        <button class="letra">S</button>
-        <button class="letra">D</button>
-        <button class="letra">F</button>
-        <button class="letra">G</button>
-        <button class="letra">H</button>
-        <button class="letra">J</button>
-        <button class="letra">K</button>
-        <button class="letra">L</button>
-        <button class="letra">Z</button>
-        <button class="letra">X</button>
-        <button class="letra">C</button>
-        <button class="letra">V</button>
-        <button class="letra">B</button>
-        <button class="letra">N</button>
-        <button class="letra">M</button>
-        <button class="apagar">
-            <img src="./assets/btnx_excluir.png" alt="apgar letra">
-        </button>
-        <button class="enter">ENTER</button>
+      <button class="tecla">Q</button>
+      <button class="tecla">W</button>
+      <button class="tecla">E</button>
+      <button class="tecla">R</button>
+      <button class="tecla">T</button>
+      <button class="tecla">Y</button>
+      <button class="tecla">U</button>
+      <button class="tecla">I</button>
+      <button class="tecla">O</button>
+      <button class="tecla">P</button>
+      <button class="tecla">A</button>
+      <button class="tecla">S</button>
+      <button class="tecla">D</button>
+      <button class="tecla">F</button>
+      <button class="tecla">G</button>
+      <button class="tecla">H</button>
+      <button class="tecla">J</button>
+      <button class="tecla">K</button>
+      <button class="tecla">L</button>
+      <button class="tecla">Z</button>
+      <button class="tecla">X</button>
+      <button class="tecla">C</button>
+      <button class="tecla">V</button>
+      <button class="tecla">B</button>
+      <button class="tecla">N</button>
+      <button class="tecla">M</button>
+      <button class="apagar">
+        <img src="./assets/btn_excluir.png" alt="apagar tecla">
+      </button>
+      <button class="enter">ENTER</button>
     </section>
-</body>
+
+  </body>
+
 </html>
