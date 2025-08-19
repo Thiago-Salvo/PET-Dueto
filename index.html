@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
-    <title>DUETO</title>
+    <title>DUETO-SALVO</title>
     <script type="text/javascript" src="./scripty.js" defer=""></script>
 </head>
 
 <body>
     <!--Titulo do Termo-->
-    <h1>DUETO</h1>
+    <h1>DUETO-SALVO</h1>
 
     <main>
       <!--Section para montar a grade do jogo e deixar responsivo o site-->
@@ -180,6 +180,37 @@
       </button>
       <button class="enter">ENTER</button>
     </section>
+
+    <!--Div para poder mostrar as regras para o usuario-->
+    <div id="modal-regras" class="modal">
+      <div class="modal-conteudo">
+        <span class="fechar-modal">&times;</span>
+        <h2>Como Jogar o DUETO-SALVO</h2>
+        <p>Adivinhe as duas palavras de 5 letras em 7 tentativas.</p>
+        <ul>
+          <li>Cada tentativa deve ser uma palavra válida e será aplicada a ambas as grades.</li>
+          <li>Após cada tentativa, a cor dos quadrados mudará para mostrar o quão perto você está da solução.</li>
+          <li>Letras que não existam em nenhuma das palavras serão desativadas no teclado.</li>
+        </ul>
+
+        <!--Divisoria-->
+        <hr>
+        <p><strong>Exemplos de Cores:</strong></p>
+        <!--Tag para poder colocar os exemplos separados, com gap-->
+        <exemplos class="exemplos-container">
+          <div>
+            <span class="letra-exemplo correta">V</span> A letra está na palavra e na posição <strong>correta</strong>.
+          </div>
+          <div>
+            <span class="letra-exemplo presente">O</span> A letra está na palavra, mas na posição <strong>errada</strong>.
+          </div>
+          <div>
+            <span class="letra-exemplo errada">A</span> A letra <strong>não está</strong> na palavra.
+          </div>
+        </exemplos>
+        <p><strong>Lembrete:</strong> As cores no teclado podem estar sendo representadas em somente uma das palavras. Bom jogo!</p>
+      </div>
+    </div>
 
   </body>
 
